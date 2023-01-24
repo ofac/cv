@@ -18,7 +18,7 @@ main.stage {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    width: 440px;
+    width: 390px;
 }
 
 main.stage section {
@@ -28,12 +28,12 @@ main.stage section {
     flex-direction: column;
     position: relative;
     overflow: hidden;
-    width: 440px;
+    width: 390px;
 }
 
 main.stage .btn-burger {
     height: 30px;
-    left: 376px;
+    left: 336px;
     position: absolute;
     top: 28px;
     width: 30px;
@@ -47,7 +47,7 @@ main.stage .btn-burger.btn-burger-open {
 
 main.stage figure.profile img {
     height: 220px;
-    left: 110px;
+    left: 85px;
     position: absolute;
     top: 45px;
     width: 220px;
@@ -87,7 +87,7 @@ main.stage nav.nav-primary {
     gap: 26px;
     position: absolute;
     justify-content: center;
-    left: 127px;
+    left: 102px;
     top: 389px;
     width: 187px;
 }
@@ -110,9 +110,9 @@ main.stage article.info-profile {
     justify-content: center;
     position: absolute;
     height: 184px;
-    left: 20px;
+    left: 10px;
     top: 494px;
-    width: 401px;
+    width: 371px;
 }
 
 main.stage article.info-profile p {
@@ -129,10 +129,10 @@ main.stage footer.nav-secondary {
     display: flex;
     height: 80px;
     justify-content: space-between;
-    left: 20px;
+    left: 10px;
     position: absolute;
     top: 703px;
-    width: 401px;
+    width: 371px;
 }
 
 main.stage footer.nav-secondary a:is(:link, :visited, :focus) {
