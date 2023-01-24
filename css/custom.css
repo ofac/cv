@@ -1,6 +1,6 @@
 body {
     align-items: center;
-    background-color: #1f1e25;
+    background-color: #131016;
     color: #cfC9f0;
     display: flex;
     justify-content: center;
@@ -10,9 +10,9 @@ body {
 
 main.stage {
     align-items: center;
-    background: transparent url(../images/bg-home.png) 
+    /* background: transparent url(../images/bg-home.png) 
                 no-repeat 
-                center;
+                center; */
     display: flex;
     height: 800px;
     flex-direction: column;
@@ -33,7 +33,7 @@ main.stage section {
 
 main.stage .btn-burger {
     height: 30px;
-    left: 386px;
+    left: 376px;
     position: absolute;
     top: 18px;
     width: 30px;
