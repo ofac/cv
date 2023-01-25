@@ -1,3 +1,5 @@
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* G e n e r a l */
 body {
     align-items: center;
     background-color: #131016;
@@ -30,10 +32,8 @@ main.stage section {
     overflow: hidden;
     width: 390px;
 }
-
-
-/* - - - */
-
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* M e n u   B u r g e r */
 .menu-toggle {
     display: block;
     left: 156px;
@@ -115,7 +115,6 @@ main.stage section {
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-
 main.stage .menu-burger h2 {
     color: #ffd90f;
     font-family: 'Poppins-300';
@@ -163,9 +162,12 @@ main.stage .menu-burger nav.menu-options a:is(:hover) {
     transform: scale(1.08);   
 }
 
-/* - - - */
-
-main.stage figure.profile img {
+main.stage .menu-burger nav.menu-options a:is(.active) { 
+    color: #ffd90f;
+}
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* S t a g e (1) */
+main.stage.stage1 figure.profile img {
     height: 220px;
     left: 85px;
     position: absolute;
@@ -173,7 +175,7 @@ main.stage figure.profile img {
     width: 220px;
 }
 
-main.stage h1 {
+main.stage.stage1 h1 {
     color: #ffd90f;
     font-family: 'Poppins-400';
     font-weight: 400;
@@ -187,7 +189,7 @@ main.stage h1 {
     width: 285px;
 }
 
-main.stage h2 {
+main.stage.stage1 h2 {
     font-family: 'Poppins-300';
     font-weight: 300;
     font-style: normal;
@@ -200,7 +202,7 @@ main.stage h2 {
     width: 236px;
 }
 
-main.stage nav.nav-primary {
+main.stage.stage1 nav.nav-primary {
     align-items: center;
     display: flex;
     height: 80px;
@@ -212,15 +214,15 @@ main.stage nav.nav-primary {
     width: 187px;
 }
 
-main.stage nav.nav-primary a:is(:link, :visited, :focus) {
+main.stage.stage1 nav.nav-primary a:is(:link, :visited, :focus) {
     transition: transform 0.25s ease-in;
 }
 
-main.stage nav.nav-primary a:is(:hover) {
+main.stage.stage1 nav.nav-primary a:is(:hover) {
     transform: scale(1.08);
 }
 
-main.stage article.info-profile {
+main.stage.stage1 article.info-profile {
     align-items: center;
     background: transparent url(../images/bg-profile.png) 
                 no-repeat 
@@ -235,7 +237,7 @@ main.stage article.info-profile {
     width: 371px;
 }
 
-main.stage article.info-profile p {
+main.stage.stage1 article.info-profile p {
     display: flex;
     font-family: 'Poppins-300';
     font-size: 18px;
@@ -245,7 +247,7 @@ main.stage article.info-profile p {
     width: 340px;
 }
 
-main.stage footer.nav-secondary {
+main.stage.stage1 footer.nav-secondary {
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -255,10 +257,152 @@ main.stage footer.nav-secondary {
     width: 371px;
 }
 
-main.stage footer.nav-secondary a:is(:link, :visited, :focus) {
+main.stage.stage1 footer.nav-secondary a:is(:link, :visited, :focus) {
     transition: transform 0.25s ease-in;
 }
 
-main.stage footer.nav-secondary a:is(:hover) {
+main.stage.stage1 footer.nav-secondary a:is(:hover) {
+    transform: scale(1.08);
+}
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* S t a g e (2) */
+
+main.stage.stage2 figure.icon-top img {
+    height: 60px;
+    left: 165px;
+    position: absolute;
+    top: 46px;
+    width: 60px;
+}
+
+main.stage2  h2 {
+    font-family: 'Poppins-300';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    height: 36px;
+    left: 137px;
+    position: absolute;
+    margin: 0;
+    top: 106px;
+    width: 118px;
+}
+
+main.stage2 div.skills {
+    background: transparent url(../images/bg-skills.svg) 
+                no-repeat 
+                center;
+    height: 380px;
+    left: 10px;
+    position: absolute;
+    top: 164px;
+    width: 371px;
+}
+
+main.stage2 div.skills h3 {
+    display: flex;
+    gap: 6px;
+    position: absolute;
+    left: 20px;
+}
+
+main.stage2 div.skills .skill {
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 330px;
+    height: 40px;
+    transition: transform 0.2s ease-in;
+}
+
+main.stage2 div.skills .skill:is(:hover) {
+    transform: scale(1.08);
+}
+
+main.stage2 div.skills .skill:first-of-type {
+    margin-top: 70px;
+}
+
+main.stage2 div.skills .skill p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+main.stage2 div.skills .skill p span:first-of-type {
+    font-family: 'Poppins-300';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+main.stage2 div.skills .skill p span:last-of-type {
+    font-family: 'Poppins-400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+main.stage2 div.skills .skill progress {
+    display: block;
+    margin-top: 4px;
+    border-radius: 20px; 
+    width: 330px;
+    height: 6px;
+}
+main.stage2 div.skills .skill progress::-webkit-progress-bar {
+    background-color: #cfc9f0;
+    border-radius: 20px;
+}
+
+main.stage2 div.skills .skill.skill1 progress::-webkit-progress-value {
+    background-color: #a470f8;
+    border-radius: 20px;
+}
+
+main.stage2 div.skills .skill.skill2 progress::-webkit-progress-value {
+    background-color: #84dcc5;
+    border-radius: 20px;
+}
+
+main.stage2 div.skills .skill.skill3 progress::-webkit-progress-value {
+    background-color: #f4d547;
+    border-radius: 20px;
+}
+
+main.stage2 div.skills .skill.skill4 progress::-webkit-progress-value {
+    background-color: #f25f5c;
+    border-radius: 20px;
+}
+
+main.stage2 h3.title-interests {
+    display: flex;
+    height: 30px;
+    gap: 6px;
+    left: 30px;
+    position: absolute;
+    top: 573px;
+    width: 110px;
+}
+
+main.stage2 div.interests {
+    position: absolute;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    top: 634px;
+    width: 371px;
+}
+
+main.stage2 div.interests .int-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.stage2 div.interests .int-row img {
+    transition: transform 0.2s ease-in;
+}
+
+main.stage2 div.interests .int-row img:is(:hover, :focus) {
     transform: scale(1.08);
 }
