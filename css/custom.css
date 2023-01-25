@@ -452,7 +452,7 @@ main.stage3 div.exp img {
 }
 
 main.stage3 div.exp:is(:hover, :focus) img  {
-    transform: scale(1.08);
+    transform: scale(1.08) rotate(45deg);
 }
 
 main.stage3 div.exp div h3 {
@@ -464,6 +464,69 @@ main.stage3 div.exp div h3 {
 }
 
 main.stage3 div.exp div p {
+    font-family: 'Poppins-300';
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
+/* - - - - - - - - - - - - - - - - - - - - - */
+/* S t a g e (4) */
+main.stage.stage4 figure.icon-top img {
+    height: 60px;
+    left: 165px;
+    position: absolute;
+    top: 46px;
+    width: 60px;
+}
+
+main.stage4  h2 {
+    font-family: 'Poppins-300';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    height: 36px;
+    left: 137px;
+    position: absolute;
+    margin: 0;
+    top: 106px;
+    width: 132px;
+}
+
+main.stage4 div.edu {
+    align-items: center;
+    background: transparent url(../images/bg-entrie.svg) 
+                no-repeat 
+                center;
+    display: flex;
+    height: 120px;
+    gap: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 371px;
+}
+
+main.stage4 div.edu:first-of-type {
+    margin-top: 114px;
+}
+
+main.stage4 div.edu img {
+    transition: transform 0.2s ease-in;
+    margin-left: 20px;
+}
+
+main.stage4 div.edu:is(:hover, :focus) img  {
+    transform: scale(1.08) rotate(-45deg);
+}
+
+main.stage4 div.edu div h3 {
+    font-family: 'Poppins-500';
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+main.stage4 div.edu div p {
     font-family: 'Poppins-300';
     font-weight: 300;
     font-size: 16px;
